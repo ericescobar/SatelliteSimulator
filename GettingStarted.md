@@ -44,18 +44,20 @@ Once you've successfully written your image and created the SSH file, you should
 * Plug in a network cable
 * Connect your Raspberry Pi to power
 
+## Finding your Pi on your local network
 Your Raspberry Pi should now boot up and automatically obtain an IP address on your local network. You will need to find this IP address in order to connect to your Raspberry Pi.
 To find your Pi's IP address, wait a few minutes for your Pi to be fully powered up and connected to your network.
 Open a command prompt in windows and type the following command:
-ipconfig
+``` ipconfig```
 
 Look through the displayed text and locate "DNS Suffix", for my network the "DNS Suffix" is "localdomain". Yours will most likely be different.
 
 Next execute the following command in the same command prompt:
-ping raspberrypi.[your DNS Suffix] 
+```ping raspberrypi.[your DNS Suffix] ```
 
 You should hopefully see a ping response with an IP address. Write down this IP address as we will use it to connect to our Raspberry Pi.
 
+## Install an SSH Client
 Next install the tool Putty: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 Putty is an SSH Client for Windows which will allow you to connect to your Raspberry Pi.
 
