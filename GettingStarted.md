@@ -84,9 +84,9 @@ With a successful login you'll now have full control of your Raspberry Pi from y
 Run the command: ```sudo raspi-config```
 
 * Change your password (1 Change User Password)
-* Optional - Connect to WiFi (2 Network Options) -> N2 Wireless LAN 
-* Optional - Configure Time Zone (4 Localisation Options) -> I2 Change Time Zone
-* Optional - Use full space of Micro SD card (7 Advanced Options) -> A1 Expand Filesystem
+* *Optional* - Connect to WiFi (2 Network Options) -> N2 Wireless LAN 
+* *Optional* - Configure Time Zone (4 Localisation Options) -> I2 Change Time Zone
+* *Optional* - Use full space of Micro SD card (7 Advanced Options) -> A1 Expand Filesystem
 
 Now ```<Finish>``` and select ```<Yes>``` to reboot. 
 
@@ -96,9 +96,9 @@ Putty will lose the connection and you will have to reconnect once the Pi has re
 
 First we are going to make sure everything is nice and updated.
 
-Run the following command once logged into the Raspberry Pi: ```sudo apt-get update && sudo apt-get upgrade -y``` *This may take a few minutes
+Run the following command once logged into the Raspberry Pi: ```sudo apt-get update && sudo apt-get upgrade -y``` *This may take a few minutes*
 
 We are next going to be following the following modified installation instructions found here: [[Credit alanbjohnston]](https://github.com/alanbjohnston/CubeSatSim/wiki/CubeSat-Simulator-Lite)
-* Optional - Clean up your home directory: ```rm -rf Documents Pictures Templates Public Music Video```
+* *Optional* - Clean up your home directory: ```rm -rf Documents Pictures Templates Public Music Video``` - **[WARNING: This will delete all of the mentioned folders!] 
 * Install the following packages: ```sudo apt-get install -y git screen libsndfile1-dev vim nmap```
 
