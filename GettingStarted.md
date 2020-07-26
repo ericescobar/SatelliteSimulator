@@ -11,7 +11,7 @@
 
 
 
-# Download Raspberry Pi OS
+# Let's get started!
 Download Raspberry Pi OS (Raspbian) - Desktop with Recommended Software
 * Note: Do not use NOOBS for this project
 
