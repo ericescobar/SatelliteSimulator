@@ -88,9 +88,15 @@ Run the command: ```sudo raspi-config```
 * Optional - Configure Time Zone (4 Localisation Options) -> I2 Change Time Zone
 * Optional - Use full space of Micro SD card (7 Advanced Options) -> A1 Expand Filesystem
 
+Now ```<Finish>``` and select ```<Yes>``` to reboot. 
 
-and expand your operating system to use the full Micro SD card, to connect your Pi to WiFi and to set the correct timezone.
+Putty will lose the connection and you will have to reconnect once the Pi has rebooted. 
 
+# Installing Software
+
+First we are going to make sure everything is nice and updated.
+
+Run the following command once logged into the Raspberry Pi: ```sudo apt-get update && sudo apt-get upgrade -y```
 
 We are going to be following the following installation instructions found here:
 https://github.com/alanbjohnston/CubeSatSim/wiki/CubeSat-Simulator-Lite
