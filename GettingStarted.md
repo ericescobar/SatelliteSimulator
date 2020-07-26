@@ -9,7 +9,7 @@
 * Software Defined Radio (SDR) - [[External Link]](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
 * BaoFeng UV-5R Radio (also acts as FM radio)- $35 - [[Amazon Link]](https://www.amazon.com/dp/B08D9HSQ2C/ref=twister_B01GW7YJTC?_encoding=UTF8&psc=1)
 
-
+---
 
 # Let's get started!
 Download Raspberry Pi OS (Raspbian) - Desktop with Recommended Software
@@ -18,7 +18,7 @@ Download Raspberry Pi OS (Raspbian) - Desktop with Recommended Software
 Use this links instead:
 * https://downloads.raspberrypi.org/raspios_full_armhf_latest
 
-# Write the OS to the Micro SD Card
+## Write the OS to the Micro SD Card
 Write image to SD card using one of the following:
 * My personal choice - [Rufus](https://rufus.ie/)
 * Raspberry Pi recommended - [rpi-imager](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
@@ -36,13 +36,13 @@ After the image is fully done writing to the MicroSD card we will enable SSH in 
 
 SSH is simply a secure method to access your Raspberry Pi over a network connection which does not require a mouse, keyboard, or monitor.
 
-# Booting the Raspberry Pi
+## Booting the Raspberry Pi
 Once you've successfully written your image and created the SSH file, you should now be ready to boot up the Raspberry Pi
--Eject the MicroSD card from your computer
--Ensure the Pi is unplugged from power
--Insert the MicroSD card into the Raspberry Pi 
--Plug in a network cable
--Connect your Raspberry Pi to power
+* Eject the MicroSD card from your computer
+* Ensure the Pi is unplugged from power
+* Insert the MicroSD card into the Raspberry Pi 
+* Plug in a network cable
+* Connect your Raspberry Pi to power
 
 Your Raspberry Pi should now boot up and automatically obtain an IP address on your local network. You will need to find this IP address in order to connect to your Raspberry Pi.
 To find your Pi's IP address, wait a few minutes for your Pi to be fully powered up and connected to your network.
