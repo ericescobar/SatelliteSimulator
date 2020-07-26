@@ -15,14 +15,13 @@
 Download Raspberry Pi OS (Raspbian) - Desktop with Recommended Software
 * Note: Do not use NOOBS for this project
 
-Use these links instead:
-* https://www.raspberrypi.org/downloads/raspberry-pi-os/
+Use this links instead:
 * https://downloads.raspberrypi.org/raspios_full_armhf_latest
 
 # Write the OS to the Micro SD Card
 Write image to SD card using one of the following:
-* My personal choice - https://rufus.ie/
-* Raspberry Pi recommended - https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+* My personal choice - [Rufus](https://rufus.ie/)
+* Raspberry Pi recommended - [rpi-imager](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
 ## Enable SSH
 After the image is fully done writing to the MicroSD card we will enable SSH in headless mode. This means that we will not require a mouse and keyboard to use the Raspberry Pi. To do this we will need to perform the following steps:
