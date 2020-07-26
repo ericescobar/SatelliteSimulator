@@ -98,6 +98,6 @@ First we are going to make sure everything is nice and updated.
 
 Run the following command once logged into the Raspberry Pi: ```sudo apt-get update && sudo apt-get upgrade -y```
 
-We are going to be following the following installation instructions found here:
-https://github.com/alanbjohnston/CubeSatSim/wiki/CubeSat-Simulator-Lite
+We are next going to be following the following modified installation instructions found here: [[Credit alanbjohnston]](https://github.com/alanbjohnston/CubeSatSim/wiki/CubeSat-Simulator-Lite)
+
 
