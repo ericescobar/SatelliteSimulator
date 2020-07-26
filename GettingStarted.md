@@ -96,8 +96,9 @@ Putty will lose the connection and you will have to reconnect once the Pi has re
 
 First we are going to make sure everything is nice and updated.
 
-Run the following command once logged into the Raspberry Pi: ```sudo apt-get update && sudo apt-get upgrade -y```
+Run the following command once logged into the Raspberry Pi: ```sudo apt-get update && sudo apt-get upgrade -y``` *This may take a few minutes
 
 We are next going to be following the following modified installation instructions found here: [[Credit alanbjohnston]](https://github.com/alanbjohnston/CubeSatSim/wiki/CubeSat-Simulator-Lite)
-
+* Optional - Clean up your home directory: ```rm -rf Documents Pictures Templates Public Music Video```
+* Install the following packages: ```sudo apt-get install -y git screen libsndfile1-dev vim nmap```
 
