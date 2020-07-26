@@ -1,13 +1,13 @@
 # Required Parts List
-* Any portable FM radio with Headphone jack - $15 - https://www.amazon.com/Personal-Portable-VR-robot-Rechargeable-Earphone/dp/B07YJBTSWY/ref=sr_1_10?dchild=1&keywords=small+fm+radio&qid=1595532866&s=electronics&sr=1-10
-* Aux cable to phone or computer - $6 - https://www.amazon.com/AmazonBasics-Stereo-Audio-Cable-Meters/dp/B00NO73MUQ/ref=sr_1_5?dchild=1&keywords=aux+cable&qid=1595532898&s=electronics&sr=1-5
-* Raspberry Pi Kit - $80 - https://www.amazon.com/CanaKit-Raspberry-Starter-Premium-Black/dp/B07BCC8PK7/ref=sr_1_4?dchild=1&keywords=raspberry+pi+3b%2B+kit&qid=1595531028&sr=8-4
-* Jumper cable (only a single cable needed) - $6 - https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_5?dchild=1&keywords=arduino+wire&qid=1595531219&sr=8-5
+* Any portable FM radio with Headphone jack - $15 - [[Amazon Link]](https://www.amazon.com/Personal-Portable-VR-robot-Rechargeable-Earphone/dp/B07YJBTSWY/ref=sr_1_10?dchild=1&keywords=small+fm+radio&qid=1595532866&s=electronics&sr=1-10)
+* Aux cable to phone or computer - $6 - [[Amazon Link]](https://www.amazon.com/AmazonBasics-Stereo-Audio-Cable-Meters/dp/B00NO73MUQ/ref=sr_1_5?dchild=1&keywords=aux+cable&qid=1595532898&s=electronics&sr=1-5)
+* Raspberry Pi Kit - $80 - [[Amazon Link]](https://www.amazon.com/CanaKit-Raspberry-Starter-Premium-Black/dp/B07BCC8PK7/ref=sr_1_4?dchild=1&keywords=raspberry+pi+3b%2B+kit&qid=1595531028&sr=8-4)
+* Jumper cable (only a single cable needed) - $6 - [[Amazon Link]](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_5?dchild=1&keywords=arduino+wire&qid=1595531219&sr=8-5)
 
 
 ### Not required, but nice to have!
-* Software Defined Radio (SDR) - https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/
-* BaoFeng UV-5R Radio (also acts as FM radio)- $35 - https://www.amazon.com/dp/B08D9HSQ2C/ref=twister_B01GW7YJTC?_encoding=UTF8&psc=1
+* Software Defined Radio (SDR) - [[External Link]](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
+* BaoFeng UV-5R Radio (also acts as FM radio)- $35 - [[Amazon Link]](https://www.amazon.com/dp/B08D9HSQ2C/ref=twister_B01GW7YJTC?_encoding=UTF8&psc=1)
 
 
 
