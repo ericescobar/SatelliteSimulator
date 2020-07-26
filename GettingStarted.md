@@ -81,12 +81,15 @@ With a successful login you'll now have full control of your Raspberry Pi from y
 
 ## Secure & Personalize
 
-First things first let's change your password:
-* Enter the following command: 
-** passwd
-Now create a unique passphrase so that no one else can access your Raspberry Pi.
+Run the command: ```sudo raspi-config```
 
-From there you can run the command "sudo raspi-config" and expand your operating system to use the full Micro SD card, to connect your Pi to WiFi and to set the correct timezone.
+* Change your password (1 Change User Password)
+* Optional - Connect to WiFi (2 Network Options) -> N2 Wireless LAN 
+* Optional - Configure Time Zone (4 Localisation Options) -> I2 Change Time Zone
+* Optional - Use full space of Micro SD card (7 Advanced Options) -> A1 Expand Filesystem
+
+
+and expand your operating system to use the full Micro SD card, to connect your Pi to WiFi and to set the correct timezone.
 
 
 We are going to be following the following installation instructions found here:
