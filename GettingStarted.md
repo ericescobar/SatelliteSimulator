@@ -47,26 +47,43 @@ Once you've successfully written your image and created the SSH file, you should
 ## Finding your Pi on your local network
 Your Raspberry Pi should now boot up and automatically obtain an IP address on your local network. You will need to find this IP address in order to connect to your Raspberry Pi.
 To find your Pi's IP address, wait a few minutes for your Pi to be fully powered up and connected to your network.
+
 Open a command prompt in windows and type the following command:
+
 ``` ipconfig```
 
 Look through the displayed text and locate "DNS Suffix", for my network the "DNS Suffix" is "localdomain". Yours will most likely be different.
 
 Next execute the following command in the same command prompt:
+
 ```ping raspberrypi.[your DNS Suffix] ```
 
+Example:
+```
+C:\Users\Eric>ping raspberrypi.localdomain
+
+Pinging raspberrypi.localdomain [192.168.11.49] with 32 bytes of data:
+Reply from 192.168.11.49: bytes=32 time=82ms TTL=64
+Reply from 192.168.11.49: bytes=32 time=2ms TTL=64
+```
 You should hopefully see a ping response with an IP address. Write down this IP address as we will use it to connect to our Raspberry Pi.
 
 ## Install an SSH Client
-Next install the tool Putty: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+Next install the tool [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 Putty is an SSH Client for Windows which will allow you to connect to your Raspberry Pi.
 
-Once installed, open Putty, and under "Host Name (or IP address)" enter the IP address we pinged previously. You will now be prompted to login. Enter the username pi, and the password raspberry
+Once installed, open Putty, and under ```"Host Name (or IP address)"``` enter the IP address we pinged previously. You will now be prompted to login. 
+Use the following default credentials:
+* Default user - ```pi```
+* Default pass - ```raspberry```
 
 With a successful login you'll now have full control of your Raspberry Pi from your normal computer. Congratulations this is the hardest part for most!
 
+## Secure & Personalize
+
 First things first let's change your password:
-Enter the following command: passwd
+* Enter the following command: 
+** passwd
 Now create a unique passphrase so that no one else can access your Raspberry Pi.
 
 From there you can run the command "sudo raspi-config" and expand your operating system to use the full Micro SD card, to connect your Pi to WiFi and to set the correct timezone.
