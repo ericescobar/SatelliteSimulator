@@ -99,8 +99,7 @@ First we are going to make sure everything is nice and updated.
 Run the following command once logged into the Raspberry Pi: ```sudo apt-get update && sudo apt-get upgrade -y``` *This may take a few minutes*
 
 We are next going to be following the following modified installation instructions found here: [[Credit alanbjohnston]](https://github.com/alanbjohnston/CubeSatSim/wiki/CubeSat-Simulator-Lite)
-* *Optional* - Clean up your home directory: ```rm -rf Documents Pictures Templates Public Music Video``` - **[WARNING: This will delete all of the mentioned folders!]**
+* *Optional* - Clean up your home directory: ```rm -rf Bookshelf/ Documents/ Music/ Public/ Videos/ Downloads/ Pictures/ Templates/``` - **[WARNING: This will delete all of the mentioned folders!]**
 * Install the following packages: ```sudo apt-get install -y git screen libsndfile1-dev vim nmap```
-* Clone all the software to your Pi (copy & paste the entire command): 
-
-``` git clone https://github.com/alanbjohnston/CubeSatSim.git && cd CubeSatSim && git clone https://github.com/ChristopheJacquet/PiFmRds.git && cd PiFmRds/src && make && cd ../../```
+* Clone all the software to your Pi (copy & paste the entire command)::
+```cd && git clone https://github.com/alanbjohnston/CubeSatSim.git && cd CubeSatSim && git clone https://github.com/ChristopheJacquet/PiFmRds.git && cd PiFmRds/src && make && cd ../../```
