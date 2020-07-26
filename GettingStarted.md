@@ -1,26 +1,30 @@
+# Download Raspberry Pi OS
 Download Raspberry Pi OS (Raspbian) - Desktop with Recommended Software
-Note: Do not use NOOBS for this project
+* Note: Do not use NOOBS for this project
 
 Use these links instead:
-https://www.raspberrypi.org/downloads/raspberry-pi-os/
-https://downloads.raspberrypi.org/raspios_full_armhf_latest
+* https://www.raspberrypi.org/downloads/raspberry-pi-os/
+* https://downloads.raspberrypi.org/raspios_full_armhf_latest
 
+# Write the OS to the Micro SD Card
 Write image to SD card using one of the following:
-https://rufus.ie/ - My personal choice
-https://www.raspberrypi.org/documentation/installation/installing-images/README.md - Raspberry Pi recommended
+* My personal choice - https://rufus.ie/
+* Raspberry Pi recommended - https://www.raspberrypi.org/documentation/installation/installing-images/README.md
 
+## Enable SSH
 After the image is fully done writing to the MicroSD card we will enable SSH in headless mode. This means that we will not require a mouse and keyboard to use the Raspberry Pi. To do this we will need to perform the following steps:
--Eject the MicroSD card from your computer
--Insert the MicroSD back into the computer
--Navigate to the now mounted "Boot" partition
--Create an empty text file in that directory "ssh.txt"
--Next rename the file and remove the .txt so the file name is simply "ssh" without any file extension.
--You may need to turn file extensions on if you're performing this action in windows.
--Googling "display file extensions [your windows edition]" should take you to where you need to go.
--Additionally you can also hook up a mouse, keyboard, and monitor to your Raspberry Pi and enable SSH (this would be an alternative method to enabling SSH)
+* Eject the MicroSD card from your computer
+* Insert the MicroSD back into the computer
+* Navigate to the now mounted "Boot" partition
+* Create an empty text file in that directory "ssh.txt"
+* Next rename the file and remove the .txt so the file name is simply "ssh" without any file extension.
+* You may need to turn file extensions on if you're performing this action in windows.
+* Googling "display file extensions [your windows edition]" should take you to where you need to go.
+* Additionally you can also hook up a mouse, keyboard, and monitor to your Raspberry Pi and enable SSH (this would be an alternative method to enabling SSH)
 
 SSH is simply a secure method to access your Raspberry Pi over a network connection which does not require a mouse, keyboard, or monitor.
 
+# Booting the Raspberry Pi
 Once you've successfully written your image and created the SSH file, you should now be ready to boot up the Raspberry Pi
 -Eject the MicroSD card from your computer
 -Ensure the Pi is unplugged from power
