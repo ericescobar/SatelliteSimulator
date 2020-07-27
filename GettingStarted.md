@@ -159,12 +159,15 @@ Once you can hear the sounds produced by your Raspberry Pi on a standard FM radi
   * Multimon-ng can also accept and decode a WAV file that you may have recorded.
 ### Transmitting
 * Open another instance of Putty, and log in to the Raspberry Pi again (don't kill your first "listening" connection)
+  * [Linux users] If you've used linux before, feel free to run `screen` or `tmux`
 * Navigate to your CubSatSim directory
   * `cd ~/CubeSatSim/`
 * Run the sample transmission just as before
   * `sudo ./PiFmRds/src/pi_fm_rds -audio wav/cw.wav -freq 107.5`
-  
-  
+
+You should now see data begin to populate on your listening screen.
+Here is a clip of the decoded telemetry sample: ` E A 000 000 000 000 E A 000 000 000 000 E U 000 000 000 000 E`
+
 ## Encoding
 https://github.com/sunny256/cwwav
 sudo make install
