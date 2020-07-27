@@ -107,3 +107,8 @@ We are next going to be following the following modified installation instructio
 You. Are. Done.
 
 # Adding an Antenna
+You can next add an antenna to your Raspberry Pi to increase the transmit distance. Without the antenna, it is still possible to recieve the radio signal a few feet away. I would recommend not attaching an antenna to start with. 
+
+Attaching a jumper wire to GPIO 4 (if using the following [reference](https://www.raspberrypi.org/documentation/usage/gpio/)) should increase your transmit range. Please abide by local laws and check before transmitting to make sure your frequency is clear.
+
+
