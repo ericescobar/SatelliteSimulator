@@ -138,5 +138,9 @@ This is a sample cw file, you can also try playing the other examples provided b
 * `-audio wav/afsk5.wav`
 * `-audio wav/afsk6.wav`
 
-#
+# Further experimentation
+## Decoding
+
+## Encoding
+
 
