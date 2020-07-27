@@ -3,10 +3,9 @@
 * Aux cable to phone or computer - $6 - [[Amazon Link]](https://www.amazon.com/AmazonBasics-Stereo-Audio-Cable-Meters/dp/B00NO73MUQ/ref=sr_1_5?dchild=1&keywords=aux+cable&qid=1595532898&s=electronics&sr=1-5)
 * Raspberry Pi Kit - $80 - [[Amazon Link]](https://www.amazon.com/CanaKit-Raspberry-Starter-Premium-Black/dp/B07BCC8PK7/ref=sr_1_4?dchild=1&keywords=raspberry+pi+3b%2B+kit&qid=1595531028&sr=8-4)
 * Jumper cable (only a single cable needed) - $6 - [[Amazon Link]](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_5?dchild=1&keywords=arduino+wire&qid=1595531219&sr=8-5)
-
+*  Software Defined Radio (SDR) - [[External Link]](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
 
 ### Not required, but nice to have!
-* Software Defined Radio (SDR) - [[External Link]](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
 * BaoFeng UV-5R Radio (also acts as FM radio)- $35 - [[Amazon Link]](https://www.amazon.com/dp/B08D9HSQ2C/ref=twister_B01GW7YJTC?_encoding=UTF8&psc=1)
 
 ---
@@ -100,10 +99,11 @@ Run the following command once logged into the Raspberry Pi: ```sudo apt-get upd
 
 We are next going to be following the following modified installation instructions found here: [[Credit alanbjohnston]](https://github.com/alanbjohnston/CubeSatSim/wiki/CubeSat-Simulator-Lite)
 * *Optional* - Clean up your home directory: ```rm -rf Bookshelf/ Documents/ Music/ Public/ Videos/ Downloads/ Pictures/ Templates/``` - **[WARNING: This will delete all of the mentioned folders!]**
-* Install the following packages: ```sudo apt-get install -y git screen libsndfile1-dev vim nmap minimodem cmake```
+* Install the following packages: ```sudo apt-get install -y git screen libsndfile1-dev vim nmap minimodem cmake rtl-sdr```
 * Clone all the software to your Pi (copy & paste the entire command as one line):
 ```cd && git clone https://github.com/alanbjohnston/CubeSatSim.git && cd CubeSatSim && git clone https://github.com/ChristopheJacquet/PiFmRds.git && cd PiFmRds/src && make && cd ../../```
-
+Now run this:
+`cd && git clone https://github.com/alanbjohnston/CubeSatSim.git && cd CubeSatSim`
 You. Are. Done.
 
 # Adding an Antenna
@@ -139,8 +139,40 @@ This is a sample cw file, you can also try playing the other examples provided b
 * `-audio wav/afsk6.wav`
 
 # Further experimentation
-## Decoding
+Once you can hear the sounds produced by your Raspberry Pi on a standard FM radio, the next step is decoding the actual messages. 
 
+## Decoding CW telemetry sample
+* Shutdown the raspberry pi with the following command:
+  * `sudo shutdown -h now`
+* Plug in the software defined radio (SDR)
+* Power the Pi back on and reconnect to it via SSH
+
+### Listening
+* Navigate to the mutimon-ng directory (more info on Multimon-ng can be found [[here]](https://github.com/EliasOenal/multimon-ng):
+  * `cd ~/miltimon-ng/build/`
+* Issue the following command:
+  * `rtl_fm -f 107.5M -s 48000 | multimon-ng -t raw -a MORSE_CW /dev/stdin`
+  * This command will instruct the Raspberry Pi to use your software defined radio to listen on `107.5`FM with a `-s` sample rate of 4800.
+  * The pipe `|` will direct the output of the SDR to `multimon-ng`
+  * Multimon-ng is instructed to accept raw input `-t raw` and to decode morse cw `-a MORSE_CW` (other decoding options are available)
+  * Lastly `/dev/stdin` instructs multimon-ng to accept input from the pipe `|`
+  * Multimon-ng can also accept and decode a WAV file that you may have recorded.
+### Transmitting
+* Open another instance of Putty, and log in to the Raspberry Pi again (don't kill your first "listening" connection)
+* Navigate to your CubSatSim directory
+  * `cd ~/CubeSatSim/`
+* Run the sample transmission just as before
+  * `sudo ./PiFmRds/src/pi_fm_rds -audio wav/cw.wav -freq 107.5`
+  
+  
 ## Encoding
+https://github.com/sunny256/cwwav
+sudo make install
+
+# Extra Credit
+
+If you have time, you can experiment with AFSK, start by decoding the samples provided by the AMSAT team!
+(Note: multi
+Next try encoding your own!
 
 
