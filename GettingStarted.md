@@ -149,7 +149,7 @@ Once you can hear the sounds produced by your Raspberry Pi on a standard FM radi
 
 ### Listening
 * Navigate to the mutimon-ng directory (more info on Multimon-ng can be found [[here]](https://github.com/EliasOenal/multimon-ng):
-  * `cd ~/miltimon-ng/build/`
+  * `cd ~/multimon-ng/build/`
 * Issue the following command:
   * `rtl_fm -f 107.5M -s 48000 | multimon-ng -t raw -a MORSE_CW /dev/stdin`
   * This command will instruct the Raspberry Pi to use your software defined radio to listen on `107.5`FM with a `-s` sample rate of 4800.
@@ -168,12 +168,27 @@ Once you can hear the sounds produced by your Raspberry Pi on a standard FM radi
 You should now see data begin to populate on your listening screen.
 Here is a clip of the decoded telemetry sample: ` E A 000 000 000 000 E A 000 000 000 000 E U 000 000 000 000 E`
 
+Let's take a minute to review what we've accomplished:
+1. Transmitted sample telemetry data (or any other WAV file) on an FM radio frequency
+2. Configured a software defined radio to listen to the sam FM radio frequency
+3. Used `multimon-ng` to accept software defined radio input, and decode the sample telemetry data
+
+Now it's not much use to send a signal from your Raspberry Pi to the same Raspberry Pi! It's also not as much fun to decode only sample data. Using the same process it is possible to Transmit on your Raspberry Pi, and listen  (recieve) on any other device with your SDR or an FM reciever.
+
 ## Encoding
-https://github.com/sunny256/cwwav
-sudo make install
+If you want to generate your own CW wav files with your own custom messages check out the following instructions:
+
+* Navigate to the `cwwav` directory
+  * `cd ~/cwwav/`
+* Echo some text into a file called `message.txt`
+  * `echo "sample message to transmit!" > message.txt`
+* Use the `cwwav` program to encode the text in `message.txt` to an audio (WAV) file `message.wav`  
+  * `./cwwav -r 48000 -o message.wav message.txt`
+* Now trasmit your custom message:
+  * `cd ~/CubeSatSim/`
+  * `sudo ./PiFmRds/src/pi_fm_rds -audio ~/cwwav/message.wav -freq 107.5`
 
 # Extra Credit
-
 If you have time, you can experiment with AFSK, start by decoding the samples provided by the AMSAT team!
 (Note: multi
 Next try encoding your own!
