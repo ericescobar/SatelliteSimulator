@@ -102,8 +102,12 @@ We are next going to be following the following modified installation instructio
 * Install the following packages: ```sudo apt-get install -y git screen libsndfile1-dev vim nmap minimodem cmake rtl-sdr```
 * Clone all the software to your Pi (copy & paste the entire command as one line):
 ```cd && git clone https://github.com/alanbjohnston/CubeSatSim.git && cd CubeSatSim && git clone https://github.com/ChristopheJacquet/PiFmRds.git && cd PiFmRds/src && make && cd ../../```
-Now run this:
-`cd && git clone https://github.com/alanbjohnston/CubeSatSim.git && cd CubeSatSim`
+* Next run the following command to install the signal decoder `multimon-ng`:
+  * `cd && git clone https://github.com/EliasOenal/multimon-ng.git && cd ~/multimon-ng/ && mkdir build && cd build && cmake .. && make && cd`
+* Next run the following command to install the CW encoder
+  * `cd && git clone https://github.com/sunny256/cwwav.git && cd ~/cwwav/ && sudo make install && cd`
+
+
 You. Are. Done.
 
 # Adding an Antenna
