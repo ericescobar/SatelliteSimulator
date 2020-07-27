@@ -124,10 +124,19 @@ Now try a sample transmit from the CubeSatSim directory:
 * Make sure you're in the correct directory
   * `cd ~/CubeSatSim/`
 * Now try and transmit!
+  * `sudo ./PiFmRds/src/pi_fm_rds -audio wav/cw.wav -freq 107.5`
   * The `-audio wav/cw.wav` portion of the command below will play the `cw.wav` audio file within the `wav/` directory.
   * The `-freq 107.5` portion of the command will play the `cw.wav` audio file on 107.5 FM (make sure you pick an empty FM radio slice)
-  * `sudo ./PiFmRds/src/pi_fm_rds -audio wav/cw.wav -freq 107.5`
 
+You can listen to this audio on a standard FM radio (Baofeng radios work nicely as well as your car radio)
+
+This is a sample cw file, you can also try playing the other examples provided by the AMSAT team:
+* `-audio wav/afsk1.wav`
+* `-audio wav/afsk2.wav`
+* `-audio wav/afsk3.wav`
+* `-audio wav/afsk4.wav`
+* `-audio wav/afsk5.wav`
+* `-audio wav/afsk6.wav`
 
 #
 
