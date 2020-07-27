@@ -111,4 +111,21 @@ You can next add an antenna to your Raspberry Pi to increase the transmit distan
 
 Attaching a jumper wire to GPIO 4 (if using the following [reference](https://www.raspberrypi.org/documentation/usage/gpio/)) should increase your transmit range. Please abide by local laws and check before transmitting to make sure your frequency is clear.
 
+# Moving Around
+If you're new to linux there are a few things you'll need to move around to different directories.
+
+* `cd` stands for "change directory", typing the command `cd` will take you to your home directory on the Pi
+* `cd CubeSatSim` will take you into the CubeSatSim directory
+* `ls -lah` will provide a list of files and folders within the directory you are in
+* You can also use the `TAB` key to autocomplete!
+
+# Transmitting
+Now try a sample transmit from the CubeSatSim directory:
+* Make sure you're in the correct directory
+  * `cd ~/CubeSatSim/`
+* Now try and transmit!
+  * `sudo ./PiFmRds/src/pi_fm_rds -audio wav/cw.wav -freq 107.5` 
+
+
+#
 
