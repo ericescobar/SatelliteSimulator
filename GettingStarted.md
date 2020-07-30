@@ -6,7 +6,7 @@
 *  Software Defined Radio (SDR) - [[External Link]](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
 
 ### Not required, but nice to have!
-* BaoFeng UV-5R Radio (also acts as FM radio)- $35 - [[Amazon Link]](https://www.amazon.com/dp/B08D9HSQ2C/ref=twister_B01GW7YJTC?_encoding=UTF8&psc=1)
+* BaoFeng UV-5RH Radio (also acts as FM radio)- $35 - [Amazon](https://www.amazon.com/gp/product/B0716ZCX5W/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 
 ---
 
